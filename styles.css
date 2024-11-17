@@ -30,24 +30,53 @@ html, body {
 
 .h1 {
   font-family: 'Satan', sans-serif;
-  font-size: 60px; /* Adjust as per your preference */
+  font-size: 60px;
   text-shadow: 0 0 20px white;
   color: white;
   letter-spacing: 30px;
   margin-bottom: 1;
-  animation: fadeIn 3s forwards; /* Optional animation */
+  animation: fadeIn 3s forwards;
 }
 
 .star {
-  font-size: 40px; /* Adjust to desired size */
+  font-size: 40px;
   color: white;
   text-shadow: 0 0 10px white;
   margin-right: 15px;
-  margin-top: 0px; /* Reduce space between heading and star */
-  margin-bottom: 0; /* Ensure no extra bottom space */
-  text-align: center; /* Center-align it */
+  margin-top: 0px;
+  margin-bottom: 5;
+  text-align: center;
   position: relative;
   animation: fadeInStar 3s forwards, rotateSliding 3s infinite ease-in-out;
+}
+
+.enter {
+  font-family: 'Satan', sans-serif;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px white;
+  text-decoration: none;
+  letter-spacing: 20px;
+  animation: enterFadeIn 3s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+ color: #A69494;
+}
+
+@keyframes enterFadeIn {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+  
+  
 }
 
 @keyframes fadeIn {
